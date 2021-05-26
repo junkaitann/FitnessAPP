@@ -1,4 +1,4 @@
-package FitnessApp;
+package FitnessApp.Entity;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,11 +9,19 @@ import javax.persistence.Id;
 public class DataEntity {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+    private Integer Id;
     private String Exercise;
     private String Type;
     private String Category;
     private Integer Score;
+
+    public Integer getId() {
+        return Id;
+    }
+
+    public void setId(Integer id) {
+        Id = id;
+    }
 
     public String getExercise() {
         return Exercise;
