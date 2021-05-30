@@ -15,9 +15,8 @@ public interface DataRepository extends JpaRepository<DataEntity, String> {
     @Query("select c from DataEntity c where c.Exercise like %?1")
     List<DataEntity> findByNameEndsWith(String chars);
 
-    @Query("select c from DataEntity c where Exercise = 'Bench Press'")
+    @Query(value = "select c from DataEntity c where Exercise = 'Bench Press'")
     List<DataEntity> findByNameEndsWith2();
-
 
 }
 
