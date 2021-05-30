@@ -7,4 +7,5 @@ import java.util.List;
 public interface IDataService {
 
     List<DataEntity> findByNameEndsWith(String Exercise);
+    List<DataEntity> findByNameEndsWith2();
 }

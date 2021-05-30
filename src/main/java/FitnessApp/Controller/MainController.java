@@ -52,14 +52,9 @@ public class MainController {
     }
 
     @GetMapping(path="/all3")
-    public @ResponseBody Iterable<DataEntity> findExerciseNameEndsWith( @RequestParam String Exercise) {
+    public @ResponseBody Iterable<DataEntity> findExerciseNameEndsWith2() {
 
-
-        return dataService.findByNameEndsWith(Exercise);
+        return dataService.findByNameEndsWith2();
     }
-
-
-
-
 
 }

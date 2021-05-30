@@ -19,4 +19,10 @@ public class DataService implements IDataService {
 
         return (List<DataEntity>) repository.findByNameEndsWith(name);
     }
+
+    @Override
+    public List<DataEntity> findByNameEndsWith2() {
+
+        return (List<DataEntity>) repository.findByNameEndsWith2();
+    }
 }
